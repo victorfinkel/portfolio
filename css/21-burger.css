@@ -1,0 +1,54 @@
+
+/* burger responsive
+   ========================================================================== */
+
+/* default burger */
+
+@media (max-width: 48em) {
+	.burger {
+		display: block;
+		position: fixed;
+		top: -1.6em;
+		right: 0;
+		width: 3.2em;
+		height: 3.2em;
+	}
+	.burger::after {
+		content: "menu";
+		position: absolute;
+		top: 50%;
+		font-size: .8em;
+		line-height: 0;
+		-webkit-transform: translate3d(-3.2em,0,0);
+		transform: translate3d(-3.2em,0,0);
+		-webkit-transition: all .2s ease;
+		transition: all .2s ease;
+	}
+	/*
+	.burger:hover::after {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transform: translate3d(-3em,0,0);
+		transform: translate3d(-3em,0,0);
+	}
+	*/
+	.burger::before, .burger__icon::before, .burger__icon::after {
+		content: "";
+		position: absolute;
+		top: 33.3334%;
+		right: 0;
+		left: 0;
+		width: 1.37em;
+		height: 2px;
+		margin: auto;
+		background: #383838;
+	}
+	.burger::before {
+		top: 0;
+		bottom: 0;
+	}
+	.burger__icon::after {
+		top: auto;
+		bottom: 33.3334%;
+	}
+}

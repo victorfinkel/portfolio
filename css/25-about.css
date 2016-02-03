@@ -1,0 +1,122 @@
+.about {
+	position: relative;
+}
+
+.travel {
+	display: block;
+	position: relative;
+	height: 10em;
+	background: url(../img/boat.jpg);
+	background-position: center 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.google-map {
+	margin-bottom: 0;
+}
+.map {
+    position: absolute;
+    padding: 1em 1em 1em 2em;
+	background-color:rgba(30, 32, 34, 1);
+	color: #fcfcfc;
+	border-radius: 5px;
+    top: 5%;
+    left:-1%;
+ }
+ .map:hover {
+ 	color: #ff5722;
+ }
+.map:hover .place {
+	opacity: 1;
+	-webkit-transform: translateX(4.2em);
+    transform: translateX(4.2em);
+}
+.place {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: -16%;
+    width: 386%;
+	-webkit-transform: translateX(-6em);
+    transform: translateX(-6em);
+    transition:all .3s ease;
+    opacity: 0;
+    padding: 1em 1em 1em 2em;
+	background-color:rgba(30, 32, 34, 1);
+	border-radius: 5px;
+}
+.book {
+	margin-top:2em;
+	justify-content:space-between;
+}
+.book__box {
+	/*border:1px solid rgba(82, 97, 107, .25);*/
+	background: #fff;
+	height: 190px;
+}
+.book__img {
+	max-width: 130px;
+}
+.face {
+	align-self: center;
+}
+.face__box {
+	width: 100%;
+
+}
+.bubble--about {
+	width: 12em;
+    height: 12em;
+	background: url(../img/profil.jpg);
+	background-position: 40% 3%;
+	border-radius: 50%;
+	margin: 4.2rem auto;
+}
+
+
+@media (max-width: 72.9375em) {
+ 	 .book {
+    	justify-content:flex-start;
+    }
+}
+@media (max-width: 48em) {
+	.face__box {
+		margin: 2em auto;
+	}
+	.interest {
+		justify-content:center;
+	}
+	/*
+	  .bubble--about {
+     	width: 12em;
+     	height: 12em;
+    }
+    */
+	.thanks {
+		margin-bottom: 2em;
+	}
+    .book .book__box.grid__item {
+    	margin-top: 1em;
+    	margin-bottom: 1em;
+    	width:calc(50% - 1em);    	;
+    }
+}
+@media (min-width: 40.0625em) and (max-width: 48em) {
+}
+@media (max-width: 40em) {
+
+    .bubble--about {
+    	margin-left: calc(50% - 6em);
+    }
+    .map {
+    	font-size: 1.4rem;
+    }
+
+}
+@media (max-width: 30em) {
+
+}
+@media (max-width: 20em) {
+
+}

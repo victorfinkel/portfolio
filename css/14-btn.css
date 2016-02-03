@@ -1,0 +1,94 @@
+/* Butttons */
+.home_work {
+    display: flex;
+    flex-direction:column;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    width: 25%;
+    margin-top: 1em;
+    text-align: center;
+    padding: .5em .5em;
+	box-shadow: inset 0 0 0 2px #ff5722 ;
+	border-radius: 5px;
+	color: #ff5722;
+	text-decoration: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.btn--left {
+    float: none;
+}
+.btn--work {
+    width: 15%;
+    margin: auto;
+}
+.btn--next {
+    width: 100%;
+    color: #fcfcfc;
+    background: #52616b;
+    box-shadow: inset 0 0 0 2px #52616b ;
+}
+.btn:after {
+	content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background: #ff5722;
+    /* background: -webkit-linear-gradient(,#ff5722 0%,#cf3c09 100%);
+	background: linear-gradient(#ff5722 0%,#cf3c09 100%);
+    */
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+	-webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: 5px;
+}
+.btn:hover {
+	color: #fcfcfc;
+}
+.btn:hover:after {
+	-webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+	}
+
+ .btn--send {
+    border: none;
+    box-shadow: none;
+ }
+@media (max-width: 72.9375em) {
+    .btn {
+        float: none;
+        display: table;
+        margin: 1em auto;
+        max-width: 30%;
+    }
+}
+@media (max-width: 48em) {
+    .btn {
+         max-width: 50%;
+    }
+  }
+@media (min-width: 40.0625em) and (max-width: 48em) {
+}
+@media (max-width: 40em) {
+    .btn {
+        padding: .5em 2em;
+        max-width: 100%;
+    }
+}
+@media (max-width: 30em) {
+
+}
+@media (max-width: 20em) {
+
+}

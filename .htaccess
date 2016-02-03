@@ -1,0 +1,55 @@
+## No IFRAME ##
+
+Header set X-Frame-Options SAMEORIGIN
+
+## XXSS ##
+
+Header set X-XSS-Protection "1; mode=block"
+
+## MIME ##
+
+Header set X-Content-Type-Options "nosniff"
+
+## KEEP ALIVE ##
+
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
+
+## EXPIRES CACHING ##
+
+<IfModule mod_expires.c>
+
+    ExpiresActive on  
+    ExpiresDefault                                      "access plus 1 month" 
+
+  # Media files
+    ExpiresByType image/jpeg                            "access plus 1 month"
+    ExpiresByType image/jpg                             "access plus 1 month"
+    ExpiresByType image/gif 				"access plus 1 month"
+    ExpiresByType image/png                             "access plus 1 month"
+ 
+  # CSS
+    ExpiresByType text/css                              "access plus 1 year"
+
+  # JavaScript
+    ExpiresByType text/x-javascript                     "access plus 1 year"
+  
+  # Web fonts
+    ExpiresByType application/x-font-woff               "access plus 1 month"
+    ExpiresByType application/font-woff                 "access plus 1 month"
+    ExpiresByType application/font-woff2                "access plus 1 month"
+    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+    ExpiresByType application/x-font-ttf                "access plus 1 month"
+    ExpiresByType font/opentype                         "access plus 1 month"
+    ExpiresByType image/svg+xml                         "access plus 1 month"
+
+  # Favicon (cannot be renamed!) and cursor images
+    ExpiresByType image/x-icon                          "access plus 1 week"    
+
+</IfModule>
+
+## ETAGS REMOVAL ##
+
+Header unset ETag
+FileETag none

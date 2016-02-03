@@ -1,0 +1,38 @@
+.footer {
+	background: #1e2022;
+}
+
+.legal {
+	text-decoration: none;
+	color: #fcfcfc;
+
+}
+.footer__icon {
+	color: #fcfcfc;
+	font-size: 1.7rem;
+	transition:all .3s ease;
+	margin-left: 1em;
+}
+.footer__icon:hover, .orange {
+	color: #ff5722;
+}
+@media (max-width: 72.9375em) {
+ 	.footer {
+		padding: 0 2.1rem;
+	}
+
+}
+@media (max-width: 48em) {
+
+}
+@media (min-width: 40.0625em) and (max-width: 48em) {
+}
+@media (max-width: 40em) {
+
+}
+@media (max-width: 30em) {
+
+}
+@media (max-width: 20em) {
+
+}

@@ -1,0 +1,166 @@
+
+/* devices
+   ========================================================================== */
+
+/* default device */
+
+.header {
+	display: block;
+	position: relative;
+	background-size: cover;
+	background-attachment: fixed;
+	max-width: 100%;
+	padding: 0 1em;
+	z-index: 0;
+	height: 20em;
+}
+.header::before {
+	position: absolute;
+	z-index: -1;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color:rgba(0, 0, 0, .5);
+}
+
+.header--home {
+	background-image: url(../img/header/1024/paris.jpg);
+	background-attachment: fixed;
+    background-position: 0 6rem;
+    height: 33em;
+}
+.header--about {
+	background-image: url(../img/header/1024/indonesian.jpg);
+	background-position: center 8%;
+}
+.header--contact {
+	background-image: url(../img/header/1024/contact.jpg);
+	background-position: center;
+}
+.header--work {
+	background-image: url(../img/header/1024/work.jpg);
+	background-position:center 40%;
+
+}
+.header--shoppinglist {
+	background-image: url(../img/header/1024/shoppinglist.jpg);
+	background-position:center 30%;
+}
+.header--stalker {
+	background-image: url(../img/header/1024/stalker.jpg);
+	background-position:center 5%;
+}
+.header--solar {
+	background-image: url(../img/header/1024/solar.jpg);
+	background-position:center 55%;
+}
+.header--legal {
+	background-image: url(../img/header/legal.jpg);
+	background-position:center 55%;
+}
+
+.header--dark::before {
+	background-color:rgba(0, 0, 0, .7);
+}
+@media (min-width: 1024px) {
+.header--home {
+	background-image: url(../img/header/1024/paris.jpg);
+	background-attachment: fixed;
+    background-position: 0 6rem;
+}
+.header--about {
+	background-image: url(../img/header/1024/indonesian.jpg);
+	background-position: center 8%;
+}
+.header--contact {
+	background-image: url(../img/header/1024/contact.jpg);
+	background-position: center;
+}
+.header--work {
+	background-image: url(../img/header/1024/work.jpg);
+	background-position:center 40%;
+
+}
+.header--shoppinglist {
+	background-image: url(../img/header/1024/shoppinglist.jpg);
+	background-position:center 30%;
+}
+.header--stalker {
+	background-image: url(../img/header/1024/stalker.jpg);
+	background-position:center 5%;
+}
+.header--solar {
+	background-image: url(../img/header/1024/solar.jpg);
+	background-position:center 55%;
+}
+}
+@media (min-width: 1920px) {
+.header--home {
+	background-image: url(../img/header/1920/paris.jpg);
+	background-attachment: fixed;
+    background-position: 0 6rem;
+}
+.header--about {
+	background-image: url(../img/header/1920/indonesian.jpg);
+	background-position: center 8%;
+}
+.header--contact {
+	background-image: url(../img/header/1920/contact.jpg);
+	background-position: center;
+}
+.header--work {
+	background-image: url(../img/header/1920/work.jpg);
+	background-position:center 40%;
+
+}
+.header--shoppinglist {
+	background-image: url(../img/header/1920/shoppinglist.jpg);
+	background-position:center 30%;
+}
+.header--stalker {
+	background-image: url(../img/header/1920/stalker.jpg);
+	background-position:center 5%;
+}
+.header--solar {
+	background-image: url(../img/header/1920/solar.jpg);
+	background-position:center 55%;
+}
+}
+@media (min-width: 2550px) {
+.header--home {
+	background-image: url(../img/header/2550/paris.jpg);
+	background-attachment: fixed;
+    background-position: 0 6rem;
+}
+.header--about {
+	background-image: url(../img/header/2550/indonesian.jpg);
+	background-position: center 8%;
+}
+.header--contact {
+	background-image: url(../img/header/2550/contact.jpg);
+	background-position: center;
+}
+.header--work {
+	background-image: url(../img/header/2550/work.jpg);
+	background-position:center 40%;
+
+}
+.header--shoppinglist {
+	background-image: url(../img/header/2550/shoppinglist.jpg);
+	background-position:center 30%;
+}
+.header--stalker {
+	background-image: url(../img/header/2550/stalker.jpg);
+	background-position:center 5%;
+}
+.header--solar {
+	background-image: url(../img/header/2550/solar.jpg);
+	background-position:center 55%;
+}
+.work__subtitles {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+}

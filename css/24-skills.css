@@ -1,0 +1,154 @@
+.skills {
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+}
+.skills__icon {
+	color: #ff5722;
+	position: relative;
+	width: 4.2rem;
+	font-size: 6.3rem;
+}
+/*
+.skills__icon:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #ff5722;
+}
+*/
+.skills__subbox {
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+
+}
+
+.skills__box:hover .skills__subtitle {
+	color: rgba(82, 97, 107, .8);
+}
+
+.skills__box:hover .process:after  {
+	opacity: 1;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+.skills__subtitle {
+	margin-top: 2.1rem;
+	text-transform: uppercase;
+	color: #ff5722;
+	font: 400 2.7rem/1.2592 "Roboto", Georgia, serif;
+
+
+}
+.skills__subtitle:hover {
+	/*color: rgba(82, 97, 107, .8);*/
+	color: #ff5722;
+}
+.content__skills {
+	margin: 2.1rem auto;
+	text-align: left;
+	width: 90%;
+}
+
+.skills__box {
+	font-size: 1.7rem;
+	margin-bottom: 1em;
+}
+/*
+.skills__box:nth-child(-3n+8)::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	border-bottom: 1px solid #c9d6df;
+	width: 25em;
+	margin-left: -12.5em;
+	margin-top: 2.2em;
+}
+*/
+
+
+.skills__box--discover {
+	background: -webkit-linear-gradient(#ff5722 0%, #cf3c09 100%);
+	background: -o-linear-gradient(#ff5722 0%, #cf3c09 100%);
+	background: linear-gradient(#ff5722 0%, #cf3c09 100%);
+	color: #fff;
+	position: relative;
+}
+.skills__process::before {
+    content:"";
+    position: absolute;
+    top: 8%;
+    left: 33%;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 1.8;
+    color: #52616b;
+
+}
+/*
+.skills__box:hover {
+	border:1px solid rgba(82, 97, 107, 0);
+	-webkit-box-shadow: inset 0 0 0 5px #ff5722;
+   box-shadow: inset 0 0 0 5px #ff5722;
+}
+*/
+.icon__process {
+	z-index: 90;
+	color: rgba(82, 97, 107, 1);
+}
+@media (max-width: 72.9375em) {
+	.skills {
+		padding: 0 1em;
+	}
+	.skills__box {
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.skills__subbox {
+		flex-direction:column;
+	}
+	.skills__subtitle {
+		margin-top: 1em;
+	}
+	.content__skills {
+
+		width: 100%;
+	}
+	.skills__subtitle {
+		margin-left: 0;
+	}
+}
+@media (max-width: 48em) {
+
+	.skills__box {
+		margin: 0;
+	}
+	.content__skills {
+
+		text-align: left;
+	}
+}
+@media (min-width: 40.0625em) and (max-width: 48em) {
+
+}
+@media (max-width: 40em) {
+	.skills {
+		flex-direction:column;
+	}
+
+
+}
+@media (max-width: 30em) {
+
+}
+@media (max-width: 20em) {
+
+}

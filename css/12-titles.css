@@ -1,0 +1,112 @@
+/* Styles des titres */
+
+.main__title {
+	position: relative;
+}
+.main__title--light {
+	color: #fcfcfc;
+}
+.title {
+	margin-top: 2.1rem;
+}
+.main__title:after {
+	content: "";
+    position: absolute;
+    bottom: -.5em;
+    left: 0;
+    width: 2em;
+    height: 2px;
+    background: #c9d6df;
+}
+
+.introduction__title {
+	position: relative;
+}
+.introduction__title--secondary {
+	padding-top:2em;
+}
+.introduction__subtitle {
+	position: relative;
+	margin-top: 1em;
+	font-size: 3.4rem;
+}
+.introduction__subtitle::after {
+	content: "";
+    position: absolute;
+    bottom: -1.7em;
+    left: 0;
+    width: 2em;
+    height: 2px;
+    background: #f0f5f9;
+}
+.mainp__title {
+	padding-top: 3em;
+	font-size: 5.5rem;
+}
+
+.sum {
+	padding-bottom: 1em;
+}
+.work__title {
+	font-size: 2.1rem;
+	color: #ff5722;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.next__title {
+	font-family: 'Open Sans';
+	color: #52616b;
+	font-size: 3.4rem;
+}
+@media (max-width: 72.9375em) {
+	.introduction__subtitle::after {
+		content: "";
+	    position: absolute;
+	    bottom: -.7em;
+	    left: calc(50% - 1em);
+	    width: 2em;
+	    height: 2px;
+	    background: #f0f5f9;
+	}
+
+
+	.introduction__title::after {
+		right: 50%;
+	}
+
+}
+@media (max-width: 48em) {
+ .introduction__title--secondary {
+		padding-top: 1em;
+		text-align: center;
+	}
+.introduction__content {
+	font-size: 2.1rem;
+	}
+}
+@media (min-width: 40.0625em) and (max-width: 48em) {
+
+
+}
+@media (max-width: 40em) {
+	.introduction__title:after {
+		left:35%;
+	}
+	.mainp__title {
+		padding: 8rem 0;
+	}
+	.title {
+		text-align: center;
+	}
+}
+@media (max-width: 30em) {
+	.introduction__title:after {
+		right: 22.5%;
+	}
+}
+@media (max-width: 20em) {
+	.introduction__title:after {
+		right: 15%;
+	}
+
+}

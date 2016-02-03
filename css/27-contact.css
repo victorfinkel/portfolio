@@ -1,0 +1,22 @@
+.contact__box {
+	padding-bottom: 2em;
+	border-bottom: 1px solid #c9d6df;
+}
+.contact__social {
+	list-style-type:none;
+	overflow: hidden;
+	padding: 0;
+	display: table;
+    margin: auto;
+	}
+.contact__item {
+	float: left;
+}
+.contact__icon {
+	color: #52616b;
+	font-size: 2.7rem;
+	transition:all .3s ease;
+}
+.contact__icon:hover {
+	color: #ff5722
+}

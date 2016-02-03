@@ -1,0 +1,206 @@
+
+/* helpers
+   ========================================================================== */
+
+/* blocks widths (percentage and pixels) */
+
+.w10 {
+	width: 10%;
+}
+.w20 {
+	width: 20%;
+}
+.w25 {
+	width: 25%;
+}
+.w30 {
+	width: 30%;
+}
+.w33 {
+	width: 33.3333%;
+}
+.w40 {
+	width: 40%;
+}
+.w50 {
+	width: 50%;
+}
+.w60 {
+	width: 60%;
+}
+.w66 {
+	width: 66.6666%;
+}
+.w70 {
+	width: 70%;
+}
+.w75 {
+	width: 75%;
+}
+.w80 {
+	width: 80%;
+}
+.w90 {
+	width: 90%;
+}
+.w100 {
+	width: 100%;
+}
+.w80p {
+	width: 4em;
+}
+.wauto {
+	width: auto;
+}
+.wrapper {
+	max-width: 1167px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* spacing helpers */
+
+.man {
+	margin: 0;
+}
+.pan {
+	padding: 0;
+}
+.mtn {
+	margin-top: 0;
+}
+.mrn {
+	margin-right: 0;
+}
+.mbn {
+	margin-bottom: 0;
+}
+.mln {
+	margin-left: 0;
+}
+.ptn {
+	padding-top: 0;
+}
+.prn {
+	padding-right: 0;
+}
+.pbn {
+	padding-bottom: 0;
+}
+.pln {
+	padding-left: 0;
+}
+.mas {
+	margin: 2.1rem;
+}
+.mam {
+	margin: 3.2rem;
+}
+.mal {
+	margin: 6.4rem;
+}
+.pas {
+	padding: 1.6rem;
+}
+.pam {
+	padding: 3.2rem;
+}
+.pal {
+	padding: 6.4rem;
+}
+.mtss {
+	margin-top: 2.1rem;
+}
+.mts {
+	margin-top: 4.2rem;
+}
+.mtm {
+	margin-top: 6.3rem;
+}
+.mtl {
+	margin-top: 6.4rem;
+}
+.pts {
+	padding-top: 2.1rem;
+}
+.ptm {
+	padding-top: 4.2rem;
+}
+.ptl {
+	padding-top: 6.3rem;
+}
+.mrs {
+	margin-right: 1.6rem;
+}
+.mrm {
+	margin-right: 3.2rem;
+}
+.mrl {
+	margin-right: 6.4rem;
+}
+.prs {
+	padding-right: 2.1rem;
+}
+.prm {
+	padding-right: 3.2rem;
+}
+.prl {
+	padding-right: 6.4rem;
+}
+.mbs {
+	margin-bottom: 2.1rem;
+}
+.mbm {
+	margin-bottom: 4.2rem;
+}
+.mbl {
+	margin-bottom: 6.3rem;
+}
+.pbs {
+	padding-bottom: 2.1rem;
+}
+.pbm {
+	padding-bottom: 4.2rem;
+}
+.pbl {
+	padding-bottom: 6.3rem;
+}
+.mls {
+	margin-left: 2.1rem;
+}
+.mlm {
+	margin-left: 4.2rem;
+}
+.mll {
+	margin-left: 6.3rem;
+}
+.pls {
+	padding-left: 2.1rem;
+}
+.plm {
+	padding-left: 4.2rem;
+}
+.pll {
+	padding-left: 6.3rem;
+}
+
+
+/* COLOR */
+.orange--light {
+	color: #FF9115;
+}
+.orange {
+	color: #ff5722;
+}
+.dark {
+	color: #52616b;
+}
+.light {
+	color: #f0f5f9;
+}
+.white {
+	color: #fcfcfc;
+}
+.bold {
+	font-weight: 700;
+}

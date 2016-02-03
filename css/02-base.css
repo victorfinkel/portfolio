@@ -1,0 +1,146 @@
+
+/* base
+   ========================================================================== */
+
+/* soft reset */
+
+html {
+	box-sizing: border-box;
+}
+* {
+	box-sizing: inherit;
+}
+ul, ol {
+	padding-left: 1em;
+}
+.list-unstyled {
+	list-style: none;
+}
+img {
+	vertical-align: middle;
+}
+img:not([src$=".svg"]) {
+	height: auto;
+}
+blockquote, figure {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/* typography */
+
+html {
+	font-size: 62.5%;
+	font-size: calc(1em * .625);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	background-color: #fff;
+	font: 400 2.1em/1.6190 "Roboto", sans-serif;
+	color: #52616b;
+}
+a {
+	color: #1e2022;
+}
+a:hover, a:focus, a:active {
+	color: #f55b28;
+}
+p, .p, ul, ol, dl, blockquote, pre, td, th, label, textarea, caption, details, figure {
+	margin-top: 1em;
+	margin-bottom: 0;
+	line-height: 1.6;
+}
+h1, .h1 {
+	margin-bottom: 0;
+	margin-top: 0;
+	font: 6.8rem/1  "playfair_displayregular", Georgia, sans-serif;
+    color: #fcfcfc;
+}
+h2, .h2 {
+	margin-bottom: 0;
+	margin-top: 0;
+	color: rgba(82, 97, 107, .8);
+	font: 400 5.5rem/1.2363 "playfair_displayregular", Georgia, serif;}
+
+h3, .h3 {
+	margin-bottom: 0;
+	margin-top: 0;
+	color: #ff5722;
+
+	font: 3.4rem/1 "roboto_condensedlight", Georgia, serif;
+}
+h4, .h4 {
+	margin-bottom: 0;
+	margin-top: 0;
+	font: 400 2.7rem/1.2592 "robotoregular", Georgia, serif;
+	color: rgba(82, 97, 107, .8);
+}
+h5, .h5 {
+	font: 2.1rem/1.6190 "robotoregular", Georgia, serif;
+}
+.small {
+	margin-top: 2em;
+	margin-bottom: 0;
+	font: 400 1.7rem/2 "playfair_displayregular", Verdana, Geneva, sans-serif;
+}
+code, pre, samp, kbd {
+	white-space: pre-line;
+	white-space: pre-wrap;
+	font-family: Consolas, "DejaVu Sans Mono", Courier, monospace;
+	line-height: normal;
+}
+em, .italic, address, cite, i, var {
+	font-style: italic;
+}
+
+/* hiding content */
+
+.visually-hidden {
+	position: absolute !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+}
+
+/* google gmap3 bug fix on images */
+
+.gm-style img {
+	height: 100%;
+}
+:not(.gm-style) img {
+	height: auto;
+}
+.gm-style img, .gmnoscreen img, .gmnoprint img {
+	max-width: none !important;
+}
+
+/* browsers consistency */
+
+p:first-child, .p:first-child, ul:first-child, ol:first-child, dl:first-child, blockquote:first-child, pre:first-child,
+h1:first-child, .h1:first-child, h2:first-child, .h2:first-child, h3:first-child, .h3:first-child, h4:first-child, .h4:first-child, .small:first-child {
+	margin-top: 0;
+}
+li p, li .p, li ul, li ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+img, table, td, blockquote, code, pre, textarea, input, video, svg {
+	max-width: 100%;
+}
+
+
+@media (max-width: 30em) {
+	.small {
+		font-size: 1.4rem;
+	}
+}
+@media (max-width: 20em) {
+	.introduction__title:after {
+		right: 15%;
+	}
+
+}

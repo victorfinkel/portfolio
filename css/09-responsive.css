@@ -1,0 +1,208 @@
+
+/* responsive
+   ========================================================================== */
+
+/* responsive large */
+
+@media (min-width: 64.0625em) {
+
+	/* layouts for large screens */
+
+	.large-hidden {
+		display: none !important;
+	}
+	.large-visible {
+		display: block !important;
+	}
+	.large-no-float {
+		float: none;
+	}
+	.large-inbl {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+
+	/* widths for large screens */
+
+	.large-w100, .large-wauto {
+		display: block !important;
+		float: none !important;
+		clear: none !important;
+		width: auto !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		border: 0;
+	}
+
+	/* margins for large screens */
+
+	.large-man {
+		margin: 0 !important;
+	}
+}
+
+/* responsive medium */
+
+@media (min-width: 40.0625em) and (max-width: 64em) {
+
+	/* layouts for medium screens */
+
+	.medium-hidden {
+		display: none !important;
+	}
+	.medium-visible {
+		display: block !important;
+	}
+	.medium-no-float {
+		float: none;
+	}
+	.medium-inbl {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+
+	/* widths for medium screens */
+
+	.medium-w100, .medium-wauto {
+		display: block !important;
+		float: none !important;
+		clear: none !important;
+		width: auto !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		border: 0;
+	}
+
+	/* margins for medium screens */
+
+	.medium-man {
+		margin: 0 !important;
+	}
+}
+
+/* responsive small */
+
+@media (min-width: 20.0625em) and (max-width: 40em) {
+
+	/* layouts for small screens */
+
+	.small-hidden {
+		display: none !important;
+	}
+	.small-visible {
+		display: block !important;
+	}
+	.small-no-float {
+		float: none;
+	}
+	.small-inbl {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+
+	/* widths for small screens */
+
+	.small-w100, .small-wauto {
+		display: block !important;
+		float: none !important;
+		clear: none !important;
+		width: auto !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		border: 0;
+	}
+
+	/* margins for small screens */
+
+	.small-man {
+		margin: 0 !important;
+	}
+	.small-pan {
+		padding: 0 !important;
+	}
+}
+@media (max-width: 40em) {
+
+	/* you shall not pass */
+
+	div, textarea, table, td, th, code, pre, samp {
+		word-wrap: break-word;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+	}
+}
+
+/* responsive tiny */
+
+@media (max-width: 20em) {
+
+	/* quick tiny resolution reset */
+
+	.mod, fieldset {
+		display: block !important;
+		float: none !important;
+		clear: none !important;
+		width: auto !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		border: 0;
+	}
+	.flex {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	/* layouts for tiny screens */
+
+	.tiny-hidden {
+		display: none !important;
+	}
+	.tiny-visible {
+		display: block !important;
+	}
+	.tiny-no-float {
+		float: none;
+	}
+	.tiny-inbl {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+	th, td {
+		display: block;
+		width: auto;
+		text-align: left;
+	}
+	thead {
+		display: none;
+	}
+
+	/* widths for tiny screens */
+
+	.tiny-w100, .tiny-wauto {
+		display: block !important;
+		float: none !important;
+		clear: none !important;
+		width: auto !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		border: 0;
+	}
+
+	/* margins for tiny screens */
+
+	.tiny-man {
+		margin: 0 !important;
+	}
+	.tiny-pan {
+		padding: 0 !important;
+	}
+}

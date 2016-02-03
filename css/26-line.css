@@ -1,0 +1,12 @@
+/* Trait pour les headers */
+
+.line:after {
+	content: "";
+    position: absolute;
+	top:23.9rem;
+    right: 0;
+    width: 2em;
+    height: 2px;
+    background: #f0f5f9;
+}
+

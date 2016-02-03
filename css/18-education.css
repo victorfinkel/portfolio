@@ -1,0 +1,150 @@
+.education {
+	padding: 3em 0 2em 0;
+}
+
+.education__icon {
+	margin-top: 1.4em;
+	font-size: 3.4em;
+	color: #fcfcfc;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.education__icon::before {
+	margin-right:0;
+}
+.education__date {
+	margin-top: 2.7em;
+	font-size: 2.7rem;
+	font-family: "Playfair Display";
+	font-style: italic;
+	color: #fcfcfc;
+	text-align: center;
+}
+.education__img {
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.education__img {
+	margin: 1em auto 0 auto;
+}
+.education__title {
+	margin-top:2.1rem;
+	font-size: 1.7rem;
+
+	text-align: center;
+}
+.education__diploma {
+	font-weight: bold;
+}
+
+.education__txt {
+	padding-left: 2em;
+}
+.education__school {
+	margin: 2em 0em;
+}
+.experience {
+	background: #ff5722;
+	/*	height: 12em;
+	background-attachment: fixed;
+	background-position: 5 80;
+	background-repeat: no-repeat;
+	background: url("../img/next/improvement.jpg");*/
+}
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+.flip-container, .front, .back {
+	width: 100%;
+	height: 240px;
+
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	box-shadow: 3px 3px 1px #c9d6df;
+
+
+}
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transform-origin: 50% 0 0;
+
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background:#ff5722;
+	/*
+	background: -webkit-linear-gradient(#ff5722 0%, #cf3c09 100%);
+	background: -o-linear-gradient(#ff5722 0%, #cf3c09 100%);
+	background: linear-gradient(#ff5722 0%, #cf3c09 100%);}
+	*/
+}
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	background: #fff;
+	border: 1px solid rgba(82, 97, 107, .25);
+	box-shadow: 3px 3px 1px #c9d6df;
+}
+
+@media (max-width: 64em) {
+
+     .education__bigbox {
+     	flex-direction:column;
+     }
+     .flip-container.education__box  {
+		margin-bottom: 1em;
+		padding-right: 1em;
+		width: 100%;
+     }
+      .flipper {
+    	transform: rotateY(180deg);
+    }
+    .front {
+    	display: none;
+    }
+    .back {
+	backface-visibility: visible;
+    }
+
+}
+@media (max-width: 48em) {
+}
+@media (min-width: 40.0625em) and (max-width: 48em) {
+}
+@media (max-width: 40em) {
+    .education {
+     	padding: 3em 1em;
+     }
+      .education__txt {
+    	padding: 0;
+    	margin-top: 1em;
+    	margin-bottom: 1em;
+    }
+
+}
+@media (max-width: 30em) {
+
+}
+@media (max-width: 20em) {
+
+}
+
